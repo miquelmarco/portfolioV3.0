@@ -1,0 +1,156 @@
+.color1 {
+    color: #09292d;
+}
+
+.color2 {
+    color: #1a5d7b;
+}
+
+.color3 {
+    color: #26b79c;
+}
+
+.color4 {
+    color: #b7d784;
+}
+
+.color5 {
+    color: #e2dda5;
+}
+
+/* font-family: 'Silkscreen', sans-serif; */
+/* font-family: 'Fira Sans', sans-serif; */
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    /* border: solid red 1px; */
+}
+
+body {
+    background-color: #09292d;
+    color: #e2dda5;
+}
+
+header {
+    height: 25vh;
+    background-color: #1a5d7b;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+main {
+    min-height: 75vh;
+}
+
+footer {
+    min-height: 50vh;
+}
+
+/* header edit */
+
+.imgHeader {
+    border-radius: 6rem;
+}
+
+.headerSubTitle {
+    color: #26b79c;
+}
+
+@keyframes blinking {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinking {
+    animation: blinking 1s infinite;
+    animation-timing-function: steps(1, end);
+}
+
+/* main edit */
+
+.mainFirst {
+    height: 75vh;
+    width: 100vw;
+    font-family: 'Fira Sans', sans-serif;
+    border-bottom: #b7d784 5px solid;
+}
+
+.firstLegendSubtitle {
+    font-size: small;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 65ch;
+
+    animation: typing 7s steps(65) infinite,
+        blink 0.5s infinite step-end alternate;
+    animation-delay: 7s;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.mainSecond {
+    height: 75vh;
+    width: 100vw;
+    font-family: 'Fira Sans', sans-serif;
+    border-bottom: #b7d784 5px solid;
+}
+
+.oList {
+    font-size: small;
+}
+
+.miniPImg {
+    height: 60%;
+    border: #26b79c 2px solid;
+    padding: 1rem !important;
+}
+
+.projDesc {
+    font-size: medium;
+    color: #26b79c;
+}
+
+.linkIcon {
+    color: #e2dda5;
+}
+
+.linkIcon:hover {
+    color: #1a5d7b;
+    transition: 0.5s;
+}
+
+.appText {
+    font-size: small;
+}
+
+.arrowImgFirstProy {
+    width: 10%;
+}
+
+/* footer edit  */
+
+.techIcon {
+    height: 3.5rem;
+    padding: 0.3rem !important;
+    margin: 1rem !important;
+}
