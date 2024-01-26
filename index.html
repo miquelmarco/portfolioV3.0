@@ -19,9 +19,9 @@
 
 <body>
     <div id="app">
-        <header>
-            <div class="h-100 w-100 d-flex justify-content-evenly align-items-center">
-                <div class="h-100 d-flex justify-content-center align-items-center gap-3 m-2">
+        <header class="headerChanger">
+            <div class="headerContainer h-100 w-100 d-flex justify-content-evenly align-items-center">
+                <div class="headerDivOne h-100 d-flex justify-content-center align-items-center gap-3 m-2">
                     <img class="h-75 imgHeader" src="./assets/images/logoMain.png" alt="logoImg">
                     <div class="d-flex flex-column">
                         <h3>Marco Miquel</h3>
@@ -29,8 +29,8 @@
                         <h5 class="headerSubTitle blinking">Especializado en Spring!</h5>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center gap-3 m-3">
-                    <i class="bi-arrow-left fw-bolder fs-1"></i>
+                <div class="headerDivTwo d-flex justify-content-center align-items-center gap-3 m-3">
+                    <i class="arrowIcon bi-arrow-left fw-bolder fs-1"></i>
                     <div>
                         <p class="text-end">Mira esta increíble animación!</p>
                         <p class="text-end headerSubTitle">porque si no lo he dicho también hago Front! (Como Un
@@ -38,70 +38,112 @@
                         <p class="text-end headerSubTitle">(A que no te esperabas algo tan espectacular)</p>
                     </div>
                 </div>
+                <div class="mouseHeader d-none">
+                    <i class="bi bi-arrow-90deg-down fs-3"></i>
+                    <i class="bi bi-mouse fs-1"></i>
+                </div>
             </div>
         </header>
         <main>
 
             <div class="mainFirst d-flex align-items-center justify-content-around">
-                <div class="w-50 h-75 d-flex flex-column justify-content-between">
-                    <div class="d-flex flex-column text-center gap-3 p-5">
+                <div class="descriptionContainer w-50 h-75 d-flex flex-column justify-content-between">
+                    <div class="descriptionText d-flex flex-column text-center gap-3 p-5">
                         <h6 class="d-flex">Aquí podría ir un increíble texto descriptivo, pero como estoy seguro que ya
-                            has
-                            leído lo mismo
-                            muchas veces te dejo con mis proyectos, apuesto mi IDE favorito a que puedes conocerme en el
-                            camino!</h6>
+                            has leído lo mismo muchas veces te dejo con mis proyectos y links para contactarme, apuesto
+                            mi IDE favorito a que
+                            puedes conocerme en el camino!</h6>
                     </div>
-                    <div class="text-center d-flex flex-column justify-content-center align-items-center gap-3">
+                    <div
+                        class="secondMouseContainer text-center d-flex flex-column justify-content-center align-items-center gap-3">
                         <p class="firstLegendSubtitle">Otra increíble animación que no esperabas, sigue bajando para
                             continuar!</p>
                         <div>
-                            <i class="bi bi-arrow-90deg-down fs-3"></i>
-                            <i class="bi bi-mouse fs-1"></i>
+                            <i class="secondMouse bi bi-arrow-90deg-down fs-3"></i>
+                            <i class="secondMouse bi bi-mouse fs-1"></i>
                         </div>
                     </div>
                 </div>
 
-                <div class="d-flex flex-column w-25 text-end gap-3">
-                    <a target="_blank" class="text-decoration-none d-flex justify-content-end gap-2"
+                <div class="userLinkContainer d-flex flex-column w-25 text-end gap-3">
+                    <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
                         href="https://github.com/miquelmarco">
                         <p>GitHub</p>
                         <i class="bi bi-github"></i>
                     </a>
-                    <a target="_blank" class="text-decoration-none d-flex justify-content-end gap-2"
+                    <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
                         href="https://www.linkedin.com/in/marco-miquel/">
                         <p>LinkedIn</p>
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a target="_blank" class="text-decoration-none d-flex justify-content-end gap-2"
+                    <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
                         href="./assets/docs/Marco Miquel V224.pdf">
                         <p>CV</p>
                         <i class="bi bi-file-earmark-person"></i>
                     </a>
-                    <a target="_blank" class="text-decoration-none d-flex justify-content-end gap-2"
+                    <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
                         href="./assets/docs/MindHub Certificate.pdf">
                         <p>Certificación FullStack</p>
                         <i class="bi bi-file-code"></i>
                     </a>
-                    <a target="_blank" class="text-decoration-none d-flex justify-content-end gap-2"
+                    <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
                         href="./assets/docs/JS1 Certificate.pdf">
                         <p>Certificación JS1</p>
                         <i class="bi bi-file-code"></i>
                     </a>
-                    <a target="_blank" class="text-decoration-none d-flex justify-content-end gap-2"
+                    <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
                         href="mailto:miquel.marco@outlook.com">
                         <p>Envíame un Correo</p>
                         <i class="bi bi-envelope-arrow-up-fill"></i>
                     </a>
                 </div>
 
+                <div class="linkChanger d-none">
+                    <div>
+                        <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
+                            href="https://github.com/miquelmarco">
+                            <p>GitHub</p>
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
+                            href="https://www.linkedin.com/in/marco-miquel/">
+                            <p>LinkedIn</p>
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
+                            href="./assets/docs/Marco Miquel V224.pdf">
+                            <p>CV</p>
+                            <i class="bi bi-file-earmark-person"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
+                            href="./assets/docs/MindHub Certificate.pdf">
+                            <p>Certificación FullStack</p>
+                            <i class="bi bi-file-code"></i>
+                        </a>
+                        <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
+                            href="./assets/docs/JS1 Certificate.pdf">
+                            <p>Certificación JS1</p>
+                            <i class="bi bi-file-code"></i>
+                        </a>
+                        <a target="_blank" class="userLink text-decoration-none d-flex justify-content-end gap-2"
+                            href="mailto:miquel.marco@outlook.com">
+                            <p>Envíame un Correo</p>
+                            <i class="bi bi-envelope-arrow-up-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <div class="mainSecond d-flex">
-                <div class="w-50 d-flex flex-column justify-content-center p-5" ref="observedCont1">
+                <div class="widthChangerContainer w-50 d-flex flex-column justify-content-center p-5"
+                    ref="observedCont1">
                     <div class="d-flex">
                         <p class="mx-3 fs-4 w-50 animate__animated animate__pulse animate__infinite">PUENTE4PODCAST</p>
                     </div>
-                    <p class="p-3 projDesc">Desarrollo Full-Stack de aplicación web para el Podcast español
+                    <p class="proyectText p-3 projDesc">Desarrollo Full-Stack de aplicación web para el Podcast español
                         Puente4Podcast, enfocado en POO,
                         usando Gradle a través de Spring Initializr para la estructura inicial, Spring Boot para la
                         creación de Entidades y Spring
@@ -137,8 +179,8 @@
                         increíbles librerías en línea como en este caso la increíble Animate.css, eso es porque soy un
                         increíble Back-End Developer, increíble no? Cómo? Muchos increíbles? Sigue bajando!</p>
                 </div>
-                <div class="w-50 h-100 d-flex justify-content-center align-items-center">
-                    <div class="d-flex flex-column gap-4 mx-3 fs-2">
+                <div class="widthChangerContainer w-50 h-100 d-flex justify-content-center align-items-center m-1">
+                    <div class="proyectLinkContainer d-flex flex-column gap-4 mx-3 fs-2">
                         <a title="Ver Código" target="_blank" class="linkIcon"
                             href="https://github.com/miquelmarco/puente4podcast_production"><i
                                 class="bi bi-github"></i></a>
@@ -149,24 +191,26 @@
                 </div>
             </div>
 
-            <div class="mainSecond d-flex">
-                <div class="w-50 h-100 d-flex justify-content-center align-items-center">
+            <div class="mainSecond mainSecondReverse d-flex">
+                <div
+                    class="widthChangerContainer iconReverse w-50 h-100 d-flex justify-content-center align-items-center">
                     <img class="miniPImg" src="./assets/images/bookSphereMini.png" alt="booksphereMini">
-                    <div class="d-flex flex-column gap-4 mx-3 fs-2">
+                    <div class="proyectLinkContainer d-flex flex-column gap-4 mx-3 fs-2">
                         <a class="linkIcon" target="_blank" title="Ver Código"
                             href="https://github.com/miquelmarco/Book-Sphere"><i class="bi bi-github"></i></a>
                         <a class="linkIcon" target="_blank" title="Ver Página"
                             href="https://booksphere-28wi.onrender.com/"><i class="bi bi-box-arrow-up-right"></i></a>
                     </div>
                 </div>
-                <div class="w-50 d-flex flex-column justify-content-center p-5">
+                <div class="widthChangerContainer w-50 d-flex flex-column justify-content-center p-5">
                     <div class="d-flex">
                         <i class="bi bi-arrow-90deg-down w-25 text-end fs-5 text-white align-self-end"></i>
                         <p class="appText m-2 p-2 text-white text-center">No más animaciones (por ahora), sólo un
                             increíble proyecto!</p>
                     </div>
                     <p class="mx-3 fs-4">BOOKSPHERE</p>
-                    <p class="p-3 projDesc">Desarrollo Full-Stack E-Commerce para librería Book-Sphere. POO en back
+                    <p class="proyectText p-3 projDesc">Desarrollo Full-Stack E-Commerce para librería Book-Sphere. POO
+                        en back
                         hecho con JAVA
                         y Spring usando servicios REST. Front trabajado con Vue.Js y Bootstrap. Trabajo en equipo usando
                         metodologías SCRUM y herramientas como
@@ -197,11 +241,12 @@
             </div>
 
             <div class="mainSecond d-flex">
-                <div class="w-50 d-flex flex-column justify-content-center p-5">
+                <div class="widthChangerContainer w-50 d-flex flex-column justify-content-center p-5">
                     <div class="d-flex">
                         <p class="mx-3 fs-4 w-50">BANK OF WONDERS</p>
                     </div>
-                    <p class="p-3 projDesc">Desarrollo Full-Stack de aplicación homebanking, contiene funcionalidades
+                    <p class="proyectText p-3 projDesc">Desarrollo Full-Stack de aplicación homebanking, contiene
+                        funcionalidades
                         para solicitar cuentas
                         corrientes y de ahorros, tarjetas de crédito de distintos tipos, realizar transferencias,
                         solicitar y pagar préstamos entro otros. Filtros CORS y seguridad con Spring Security.</p>
@@ -228,8 +273,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="w-50 h-100 d-flex justify-content-center align-items-center">
-                    <div class="d-flex flex-column gap-4 mx-3 fs-2">
+                <div class="widthChangerContainer w-50 h-100 d-flex justify-content-center align-items-center">
+                    <div class="proyectLinkContainer d-flex flex-column gap-4 mx-3 fs-2">
                         <a class="linkIcon" target="_blank" href="https://github.com/miquelmarco/Home-Banking"><i
                                 class="bi bi-github"></i></a>
                         <a class="linkIcon d-none" target="_blank" href="#"><i class="bi bi-box-arrow-up-right"></i></a>
@@ -238,10 +283,11 @@
                 </div>
             </div>
 
-            <div class="mainSecond d-flex">
-                <div class="w-50 h-100 d-flex justify-content-center align-items-center">
+            <div class="mainSecond mainSecondReverse d-flex">
+                <div
+                    class="widthChangerContainer iconReverse w-50 h-100 d-flex justify-content-center align-items-center">
                     <img class="miniPImg" src="./assets/images/AEMini.png" alt="amazingeventsMini">
-                    <div class="d-flex flex-column gap-4 mx-3 fs-2">
+                    <div class="proyectLinkContainer d-flex flex-column gap-4 mx-3 fs-2">
                         <a class="linkIcon" target="_blank" title="Ver Código"
                             href="https://github.com/miquelmarco/Amazing-Events"><i class="bi bi-github"></i></a>
                         <a class="linkIcon" target="_blank" title="Ver Página"
@@ -249,9 +295,10 @@
                                 class="bi bi-box-arrow-up-right"></i></a>
                     </div>
                 </div>
-                <div class="w-50 d-flex flex-column justify-content-center p-5">
+                <div class="widthChangerContainer w-50 d-flex flex-column justify-content-center p-5">
                     <p class="mx-3 fs-4">AMAZING EVENTS</p>
-                    <p class="p-3 projDesc">Desarrollo Front-End web productora de eventos, incluye funcionalidad de
+                    <p class="proyectText p-3 projDesc">Desarrollo Front-End web productora de eventos, incluye
+                        funcionalidad de
                         filtros de búsqueda instantánea por título, categoría y fecha de los eventos, tabla de
                         estadísticas y formulario de
                         contacto.</p>
@@ -269,8 +316,8 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column align-items-center m-5">
-                <h5 class="m-3">
+            <div class="finalMainContainer d-flex flex-column align-items-center m-5">
+                <h5 class="m-3 text-center">
                     Como ya has llegado hastá acá y has mostrado interés en mi trabajo te contaré algunas cosas sobre
                     mi.
                 </h5>
@@ -286,7 +333,7 @@
                     trabajo en equipo ha sido un recurso sumamente valioso que me he traído al campo del desarrollo web
                     y que me ha permitido crear aplicaciones funcionales y de calidad.
                 </p>
-                <p>
+                <p class="text-center m-3">
                     Se me da bien todo lo relacionado con Programación Orientada a Objetos (POO), creación y manejo de
                     Entidades y Relaciones.
                 </p>
@@ -298,28 +345,40 @@
                 </p>
             </div>
 
+            <div class="d-flex justify-content-center m-3">
+                <div class="techIconContainer w-75 d-flex justify-content-center align-items-center flex-wrap">
+                    <img class="techIcon" src="./assets/images/iconsv1/html.png" alt="html" title="HTML5">
+                    <img class="techIcon" src="./assets/images/iconsv1/css.png" alt="css" title="CSS3">
+                    <img class="techIcon" src="./assets/images/iconsv1/js.png" alt="js" title="Javascript">
+                    <img class="techIcon" src="./assets/images/iconsv1/vue.png" alt="vue" title="Vue.Js">
+                    <img class="techIcon" src="./assets/images/iconsv1/bootstrap.png" alt="bootstrap" title="Bootstrap">
+                    <img class="techIcon" src="./assets/images/iconsv1/java.png" alt="java" title="JAVA">
+                    <img class="techIcon" src="./assets/images/iconsv1/spring.png" alt="spring"
+                        title="Spring Framework">
+                    <img class="techIcon" src="./assets/images/iconsv1/gradle.png" alt="gradle" title="Gradle">
+                    <img class="techIcon" src="./assets/images/iconsv1/docker.png" alt="docker" title="Docker">
+                    <img class="techIcon" src="./assets/images/iconsv1/hibernate.png" alt="hibernate" title="Hibernate">
+                    <img class="techIcon" src="./assets/images/iconsv1/maven.png" alt="maven" title="Maven">
+                    <img class="techIcon" src="./assets/images/iconsv1/sql.png" alt="sql" title="SQL">
+                    <img class="techIcon" src="./assets/images/iconsv1/postgresql.png" alt="postgresql"
+                        title="PostgreSQL">
+                    <img class="techIcon" src="./assets/images/iconsv1/postman.png" alt="postman" title="Postman">
+                    <img class="techIcon" src="./assets/images/iconsv1/intellij.png" alt="intellij" title="IntelliJ">
+                    <img class="techIcon" src="./assets/images/iconsv1/vsc.png" alt="vsc" title="Visual Studio Code">
+                    <img class="techIcon" src="./assets/images/iconsv1/git.png" alt="git" title="Git">
+                    <img class="techIcon" src="./assets/images/iconsv1/github.png" alt="github" title="GitHub">
+                    <img class="techIcon" src="./assets/images/iconsv1/trello.png" alt="trello" title="Trello">
+                </div>
+            </div>
         </main>
-        <footer class="d-flex justify-content-center m-3">
-            <div class="w-75 d-flex justify-content-center align-items-center flex-wrap bg-white">
-                <img class="techIcon" src="./assets/images/iconsv1/html.png" alt="html" title="HTML">
-                <img class="techIcon" src="./assets/images/iconsv1/css.png" alt="css" title="CSS">
-                <img class="techIcon" src="./assets/images/iconsv1/js.png" alt="js" title="Javascript">
-                <img class="techIcon" src="./assets/images/iconsv1/vue.png" alt="vue" title="Vue.Js">
-                <img class="techIcon" src="./assets/images/iconsv1/bootstrap.png" alt="bootstrap" title="Bootstrap">
-                <img class="techIcon" src="./assets/images/iconsv1/java.png" alt="java" title="JAVA">
-                <img class="techIcon" src="./assets/images/iconsv1/spring.png" alt="spring" title="Spring Framework">
-                <img class="techIcon" src="./assets/images/iconsv1/gradle.png" alt="gradle" title="Gradle">
-                <img class="techIcon" src="./assets/images/iconsv1/docker.png" alt="docker" title="Docker">
-                <img class="techIcon" src="./assets/images/iconsv1/hibernate.png" alt="hibernate" title="Hibernate">
-                <img class="techIcon" src="./assets/images/iconsv1/maven.png" alt="maven" title="Maven">
-                <img class="techIcon" src="./assets/images/iconsv1/sql.png" alt="sql" title="SQL">
-                <img class="techIcon" src="./assets/images/iconsv1/postgresql.png" alt="postgresql" title="PostgreSQL">
-                <img class="techIcon" src="./assets/images/iconsv1/postman.png" alt="postman" title="Postman">
-                <img class="techIcon" src="./assets/images/iconsv1/intellij.png" alt="intellij" title="IntelliJ">
-                <img class="techIcon" src="./assets/images/iconsv1/vsc.png" alt="vsc" title="Visual Studio Code">
-                <img class="techIcon" src="./assets/images/iconsv1/git.png" alt="git" title="Git">
-                <img class="techIcon" src="./assets/images/iconsv1/github.png" alt="github" title="GitHub">
-                <img class="techIcon" src="./assets/images/iconsv1/trello.png" alt="trello" title="Trello">
+        <footer class="d-flex justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center m-3 p-2 gap-2 text-center">
+                <p>DEV BY MARCO MIQUEL P.™</p>
+                <p>Desarrollador FullStack JAVA Certificado®</p>
+                <a class="text-decoration-none color3" href="mailto:miquel.marco@outlook.com">
+                    <p>miquel.marco@outlook.com</p>
+                </a>
+
             </div>
         </footer>
     </div>

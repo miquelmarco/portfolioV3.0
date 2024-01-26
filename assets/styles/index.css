@@ -44,7 +44,8 @@ main {
 }
 
 footer {
-    min-height: 50vh;
+    min-height: 25vh;
+    background-color: #1a5d7b;
 }
 
 /* header edit */
@@ -109,7 +110,7 @@ footer {
 }
 
 .mainSecond {
-    height: 75vh;
+    /* height: 75vh; */
     width: 100vw;
     font-family: 'Fira Sans', sans-serif;
     border-bottom: #b7d784 5px solid;
@@ -120,9 +121,10 @@ footer {
 }
 
 .miniPImg {
-    height: 60%;
+    height: 20rem;
     border: #26b79c 2px solid;
     padding: 1rem !important;
+    margin: 0.5rem !important;
 }
 
 .projDesc {
@@ -153,4 +155,198 @@ footer {
     height: 3.5rem;
     padding: 0.3rem !important;
     margin: 1rem !important;
+    background-color: #09292d58;
+    border-radius: 1rem;
+}
+
+.techIconContainer {
+    background-color: #7bd7c3
+}
+
+/* querys */
+
+@media only screen and (max-width: 1325px) {
+    .mainSecond {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainSecondReverse {
+        flex-direction: column-reverse;
+    }
+
+    .iconReverse {
+        flex-direction: row-reverse;
+    }
+
+    .widthChangerContainer {
+        width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .headerChanger {
+        height: 100vh !important;
+    }
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerDivOne {
+        height: 48% !important;
+    }
+
+    .headerDivTwo {
+        height: 48% !important;
+    }
+
+    .imgHeader {
+        height: 70% !important;
+    }
+
+    .arrowIcon {
+        display: none;
+    }
+
+    .mouseHeader {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0.3rem !important;
+    }
+
+    .secondMouse {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .mainFirst {
+        align-items: center !important;
+        gap: 1rem;
+        min-height: 20vh !important;
+        margin-top: 2rem !important;
+    }
+
+    .descriptionContainer {
+        height: 50% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .secondMouseContainer {
+        display: none !important;
+    }
+
+    .techIconContainer {
+        width: 95% !important;
+    }
+
+    .userLinkContainer {
+        width: 30% !important;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .miniPImg {
+        height: 15rem;
+        border: #26b79c 2px solid;
+        padding: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .mainFirst {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .descriptionContainer {
+        width: 95% !important;
+    }
+
+    .userLinkContainer {
+        display: none !important;
+    }
+
+    .linkChanger {
+        display: flex !important;
+        gap: 1rem;
+        margin: 0.5rem !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .techIcon {
+        height: 2.5rem;
+        padding: 0.3rem !important;
+        margin: 1rem !important;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .imgHeader {
+        height: 40% !important;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .miniPImg {
+        height: 12rem;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .miniPImg {
+        height: 10rem;
+    }
+
+    .proyectText {
+        font-size: smaller;
+    }
+
+    .widthChangerContainer {
+        padding: 0rem !important;
+        margin: 0.3rem !important;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .descriptionText {
+        padding: 0.5rem !important;
+    }
+
+    .widthChangerContainer {
+        width: 95% !important;
+        padding: 0.5rem !important;
+    }
+
+    .miniPImg {
+        height: 10rem;
+    }
+
+    .finalMainContainer {
+        margin: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .imgHeader {
+        height: 35% !important;
+    }
+
+    .techIcon {
+        height: 2.0rem;
+        padding: 0rem !important;
+        margin: 0.2rem !important;
+    }
+
+    .proyectLinkContainer {
+        margin: 0.2rem !important;
+    }
+
+    .userLink {
+        font-size: smaller;
+    }
 }
